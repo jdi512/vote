@@ -31,6 +31,7 @@ rest api 출처 : 공공데이터포털(http://data.go.kr)
 5. 지방선거(당선인 출력 O)
 
 광역단체장
+![image](https://github.com/jdi512/vote/assets/156891813/03eac08b-6a21-4455-a33f-cd4286991d5b)
 
 광역단체장 개표 결과
 ![image](https://github.com/jdi512/vote/assets/156891813/414fda12-1684-4843-be65-0ec6091159c7)
@@ -39,19 +40,24 @@ rest api 출처 : 공공데이터포털(http://data.go.kr)
 ![image](https://github.com/jdi512/vote/assets/156891813/e99c6c08-ca53-4937-8cd1-015d83868d8b)
 
 기초단체장
+![image](https://github.com/jdi512/vote/assets/156891813/35d741cb-f389-4751-ba6d-175fb207f75e)
 
 기초단체장 개표 결과
 ![image](https://github.com/jdi512/vote/assets/156891813/bada709b-8d8f-43f9-bbf8-99b5984c9f1d)
 
 기초단체장 당선인
+![image](https://github.com/jdi512/vote/assets/156891813/5431e8a7-7fc9-4fa8-b9bc-aeb58076be78)
 
 광역의원
 
 지역구 검색
+![image](https://github.com/jdi512/vote/assets/156891813/270bdeea-1217-47a0-bf04-251360bd1f90)
 
 지역구 개표 결과
+![image](https://github.com/jdi512/vote/assets/156891813/cdda16eb-a362-4904-9924-d787bda70933)
 
 당선인
+![image](https://github.com/jdi512/vote/assets/156891813/570f082c-35f7-4806-80c6-3bc20e528639)
 
 
 기초의원
