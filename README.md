@@ -33,12 +33,15 @@ rest api 출처 : 공공데이터포털(http://data.go.kr)
 광역단체장
 
 광역단체장 개표 결과
+![image](https://github.com/jdi512/vote/assets/156891813/414fda12-1684-4843-be65-0ec6091159c7)
 
 광역단체장 당선인
+![image](https://github.com/jdi512/vote/assets/156891813/e99c6c08-ca53-4937-8cd1-015d83868d8b)
 
 기초단체장
 
 기초단체장 개표 결과
+![image](https://github.com/jdi512/vote/assets/156891813/bada709b-8d8f-43f9-bbf8-99b5984c9f1d)
 
 기초단체장 당선인
 
