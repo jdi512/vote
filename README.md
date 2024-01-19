@@ -9,6 +9,8 @@
 rest api 출처 : 공공데이터포털(http://data.go.kr)
 (2023.12.28 개정으로 원래는 300개 이상도 출력이 가능한데 100개밖에 출력이 안됨.)
 
+(사진은 2023.12.27 이전)
+
 화면
 세부 선거 검색
 ![image](https://github.com/jdi512/vote/assets/156891813/9a2e26bf-de7d-467e-a7c7-f519c8e3dee2)
