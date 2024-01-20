@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value=".totalCount"/>
+		<list key="findhistory">
+			<item value=".numOfRows"/>
+			<item value=".totalCount"/>
+			<item value="data.response.body.item"/>
+			<item value="[i]"/>
+			<item value="item[i]"/>
+			<item value="i"/>
+			<item value="data.response.body.items.item[i]"/>
+			<item value="data.getCommonGusigunCodeList"/>
+			<item value="data.getCommonSggCodeList"/>
+			<item value="data.getXmntckSttusInfoInqire"/>
+			<item value="data.getWinnerInfoInqire"/>
+			<item value=".list"/>
+			<item value="class=&quot;list"/>
+			<item value="list"/>
+			<item value="result"/>
+		</list>
+		<list key="replacehistory">
+			<item value=".totalCount"/>
+			<item value=".numOfRows"/>
+			<item value=""/>
+			<item value="item[i]"/>
+			<item value="[i]"/>
+			<item value="i+1"/>
+			<item value="data.response.body.item.[i]"/>
+			<item value="data.response.body.items"/>
+			<item value="items.item[i]"/>
+			<item value="data.response.body"/>
+			<item value="list"/>
+			<item value="VO"/>
+			<item value="vote"/>
+			<item value="district"/>
+			<item value="DTO"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1309"/>
+		<item key="DIALOG_Y_ORIGIN" value="275"/>
+		<item key="DIALOG_WIDTH" value="340"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

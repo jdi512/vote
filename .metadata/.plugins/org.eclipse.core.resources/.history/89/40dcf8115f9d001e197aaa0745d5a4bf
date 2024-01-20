@@ -1,0 +1,94 @@
+package com.google.vote.controller;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.vote.domain.Criteria;
+import com.google.vote.domain.DistrictVO;
+import com.google.vote.domain.VoteVO;
+import com.google.vote.service.DistrictService;
+import com.google.vote.service.VoteService;
+
+import lombok.AllArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+/**
+ * Handles requests for the application home page.
+ */
+@Controller
+@Log4j
+@AllArgsConstructor
+public class HomeController {
+
+	private DistrictService dservice;
+	private VoteService vservice;
+
+	@GetMapping("/")
+	public String index(Criteria cri, Model model) {
+
+		return "redirect:/vote";
+	}
+
+	@GetMapping("/vote")
+	public void vote(Model model,Criteria cri) {
+		model.addAttribute("vote", vservice.getList(cri));
+		
+	}
+
+	@GetMapping("/result")
+	public void result(Model model,Criteria cri)  {
+		model.addAttribute("vote", vservice.getList(cri));
+		model.addAttribute("district", dservice.getList(cri));
+
+	}
+	/*
+	 * http://localhost/district?vno=59&code=3&id=20180613
+	 */	
+	@GetMapping("/elect")
+	public  void elect(Model model,Criteria cri) {
+		model.addAttribute("vote", cri);
+		model.addAttribute("district", dservice.getList(cri));
+	}
+
+	/*
+	 * http://localhost/district?vno=59&code=3&id=20180613
+	 */	
+	@GetMapping("/district")
+	public void district(Model model,Criteria cri) {
+		model.addAttribute("vote", cri);
+		model.addAttribute("district", dservice.getList(cri));
+	}
+
+	@GetMapping(value = "/district/{vno}")
+	public ResponseEntity<VoteVO> voteget(@PathVariable("vno") long vno) {
+		return new ResponseEntity<VoteVO>(vservice.get(vno), HttpStatus.OK);
+
+	}
+
+	@GetMapping(value = "/result/{dno}")
+	public ResponseEntity<DistrictVO> districtget(@PathVariable("dno") long dno) {
+		return new ResponseEntity<DistrictVO>(dservice.get(dno), HttpStatus.OK);
+
+	}
+	@GetMapping(value = "/elect/{dno}")
+	public ResponseEntity<DistrictVO> electget(@PathVariable("dno") long dno) {
+		return new ResponseEntity<DistrictVO>(dservice.get(dno), HttpStatus.OK);
+
+	}
+}

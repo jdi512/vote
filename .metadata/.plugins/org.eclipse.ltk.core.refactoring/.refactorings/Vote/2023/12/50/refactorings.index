@@ -1,0 +1,75 @@
+1702279986498	Delete element
+1702280022986	Rename package 'com.google.vote'
+1702280044150	Copy package
+1702280346835	Delete element
+1702280720378	Move file
+1702280725175	Move file
+1702280728792	Delete element
+1702280765311	Move file
+1702280807782	Move file
+1702280921118	Rename resource 'zerock'
+1702280932081	Move folder
+1702280934700	Delete element
+1702280941594	Rename resource 'daum'
+1702280948376	Rename resource 'admin'
+1702280955680	Delete elements
+1702282395392	Rename resource 'BoardMapper.xml'
+1702282528538	Move file
+1702282647127	Rename resource 'home.jsp'
+1702283373000	Rename resource 'include'
+1702283741054	Move compilation unit
+1702357986110	Rename resource 'home.jsp'
+1702358934313	Copy file
+1702359858510	Copy file
+1702359887909	Rename resource 'candidate.jsp'
+1702359895536	Rename resource 'Elect.jsp'
+1702361339666	Delete element
+1702361399111	Copy file
+1702361660643	Delete element
+1702361948528	Delete element
+1702363921619	Delete element
+1702441306615	Delete elements
+1702444517510	Copy compilation unit
+1702444726870	Copy file
+1702447870989	Copy compilation unit
+1702449007578	Move compilation unit
+1702450667477	Copy compilation unit
+1702453555893	Rename resource 'get.jsp'
+1702454200788	Delete element
+1702456879591	Delete element
+1702466517758	Rename resource 'district.jsp'
+1702467338112	Rename resource 'VoteMapper.xml'
+1702467863695	Copy file
+1702467932829	Copy compilation units
+1702467941962	Copy compilation unit
+1702468184292	Rename type 'ElectCriteria'
+1702468201642	Rename type 'ElectPageDTO'
+1702468223608	Rename type 'Criteria'
+1702468234369	Rename type 'PageDTO'
+1702468318311	Copy compilation units
+1702468439485	Copy file
+1702468459107	Rename type 'CityController'
+1702468527150	Copy compilation unit
+1702520188573	Copy file
+1702520684127	Delete elements
+1702520716061	Rename type 'CityCriteria'
+1702520729122	Delete elements
+1702524753807	Delete elements
+1702527293872	Delete element
+1702527617676	Rename type 'CityVO'
+1702527627088	Rename type 'CityPageDTO'
+1702527635715	Rename type 'CityService'
+1702527645424	Rename type 'CityServiceImpl'
+1702527653988	Rename type 'CityMapper'
+1702527743464	Rename resource 'list.jsp'
+1702529382147	Copy compilation unit
+1702529422738	Copy compilation units
+1702529490433	Delete element
+1702529496807	Rename resource 'CityMapper.xml'
+1702529701271	Rename type 'VotePageDTO'
+1702530316908	Delete element
+1702530722293	Delete element
+1702532708408	Delete elements
+1702534292772	Delete element
+1702539471523	Rename type 'DistrictDTO'
+1702539485459	Rename type 'VoteDTO'

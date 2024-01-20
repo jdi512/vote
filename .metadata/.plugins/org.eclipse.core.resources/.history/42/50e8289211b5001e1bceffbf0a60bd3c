@@ -1,0 +1,69 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<%@ include file="./includes/header.jsp" %>
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active">선거 목록</li>
+	</ol>
+</nav>
+<form class="row g-3"  id="form">
+<h1>선거 목록</h1>
+<p class="list"></p>
+</form>
+<script>
+$(document).ready(function () {
+
+	//뒤로가기 문제해결
+	history.replaceState({}, null, null);
+	
+	//역대 선거 출력
+	var key = "ho5ZzWHhC23tx5jSARHsEQdNvJY0fvloxEjtNOA39cLoKzXVaIuEyFPIwCpGm2uN52UF8PuwJF%2BSaStXbsHTBw%3D%3D";
+	$.ajax({
+		type: 'get',
+		url: 'https://apis.data.go.kr/9760000/CommonCodeService/getCommonSgCodeList?serviceKey=' + key,
+		data: {numOfRows:180, pageNo:1,resultType:"json"},
+		success: function (data) {
+			console.log(data);
+			var list = '';
+			var vnoarr= new Array();
+			var codearr= new Array();
+			var idarr= new Array();
+			var namearr= new Array();
+			list += '<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">';
+			list += '<thead>';
+			list += '<tr>';
+			list += '<th>이름</th>';
+			list += '</tr>';
+			list += '</thead>';
+			list += '<tbody>';
+			
+			for(i=0; i<data.response.body.totalCount; i++){
+				codearr[i] = data.response.body.items.item[i].sgTypecode;
+				idarr[i] = data.response.body.items.item[i].sgId;	
+				namearr[i] = data.response.body.items.item[i].sgName;	
+				list += '<tr class="even">';
+				if(codearr[i] != 0){
+				list += '<td>' + '<a href="/district?code='+codearr[i]+'&id='+idarr[i]+'">' + namearr[i] + '</a></td>';
+				} else {
+					list += '<td><b>' +  namearr[i] + '</b></td>';	
+				}
+				
+				list += '</tr>';
+			
+			}
+
+		
+			list += '</tbody>';
+			list += '</table>';
+			
+			$(".list").append(list);
+		}
+	});
+	
+
+});
+
+
+
+</script>
+<%@ include file="./includes/footer.jsp" %>
